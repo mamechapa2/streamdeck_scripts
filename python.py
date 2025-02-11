@@ -14,6 +14,9 @@ def main():
     script_path = os.path.abspath(sys.argv[1])
     script_dir = os.path.dirname(script_path)
 
+    #pongo de nombre el nombre del script en la ventana de la consola
+    os.system("title " + os.path.basename(script_path))
+
     #cambiar al directorio del script
     os.chdir(script_dir)
 
